@@ -11,9 +11,9 @@ export default class NotesView {
                 <div class="notes__list"></div>
             </div>
             <div contenteditable="true" class="notes__preview">
-                <textarea class="notes__title" rows="3" maxlength="39" placeholder="New Note...">
+                <textarea class="notes__title" rows="3" maxlength="38" placeholder="New Note...">
                 </textarea>
-                <button id="copyBtn">Copy</button>
+                <button id="copyBtn" style="background-color: #009578;">Copy</button>
                 <textarea id="textarea" class="notes__body">Take Note...</textarea>
             </div>
             

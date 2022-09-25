@@ -95,23 +95,36 @@ body {
     resize: none;
 }
 #copyBtn {
-	padding: 20px;
-	border-radius: 20px;
-	outline: none;
     width: 200px;
-    position: absolute;
-    right: 30;
+    top: 40px;
+    right: 50px;
+    left:800px;
+    position: fixed;
+    
+    
 }
 
 #copyBtn {
 	cursor: pointer;
-	color: #fff;
-	background: #0078D7;
-	border: none;
-	transition: all 0.3s ease-in-out;
+	display:inline-block;
+    padding:0.46em 1.6em;
+    border:0.1em solid #000000;
+    margin:0.2em 0.2em 0.2em 0.2em;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: medium;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.15s;
 }
 #copyBtn:hover {
-	background: #2196F3;
+	text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#FFFFFF;
+    border-color:#FFFFFF;
 }
 
 textarea.notes__title{
@@ -119,3 +132,9 @@ textarea.notes__title{
     resize: none;
 }
 
+@media all and (max-width:30em){
+    #copyBtn{
+    display:block;
+    margin:0.4em auto;
+    }
+}
